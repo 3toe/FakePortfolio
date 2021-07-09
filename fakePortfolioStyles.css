@@ -1,0 +1,170 @@
+/* CSS resets */
+*{
+	vertical-align: baseline;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+/* multiple instances: */
+.fatSectionHeader{
+   color: white;
+   background-image: linear-gradient(silver, rgb(135, 134, 147), silver);
+   width: 100%;
+   height: 30px;
+   line-height: 30px;
+   text-indent: 7px;
+}
+
+.thinSectionHeader{
+   color: white;
+   background-image: linear-gradient(silver, rgb(135, 134, 147), silver);
+   width: 100%;
+   height: 25px;
+   line-height: 25px;
+   text-indent: 7px;
+   font-size: 80%;
+}
+
+a{
+   color: black;
+   font-size: 80%;
+}
+
+p{
+   padding: 7px;
+   font-size: 80%;
+}
+
+/* Main website container */
+#container{
+   background-image: radial-gradient(gray, black);
+   width: 740px;
+   height: 785px;
+   margin: 0 auto;
+   display: flex;
+   flex-flow: column;
+}
+
+/* Header bar */
+   #header{
+      background-color: rgb(248, 248, 248);
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px 8px 20px;
+   }
+
+      h1{
+         font-family: 'Akaya Kanadaka', sans-serif;
+      }
+
+      h2{
+         font-size: large;
+      }
+
+/* Bio div */
+   #Bio{
+      display: flex;
+      justify-content: space-between;
+      width: 700px;     
+      margin: 20px;
+   }
+
+      #Bio img{
+         width: 300px;
+         border: 3px solid silver;
+      }
+
+      #Bio div{
+         background-image: linear-gradient(to right, rgb(248,248,248), silver);
+         width: 380px;
+         height: auto;
+      }
+
+         #Bio div a{
+            margin: 7px;
+            font-size: 80%;
+         } /* indent and size the "continue reading" link */
+
+/* 3 Projects div */
+   #Projects{
+      width: 700px;
+      display: flex;
+      margin: 0 20px;
+   }
+
+      #LaMode{
+         flex: 1;
+      }
+
+      #FamilyContacts{
+         flex: 1;
+         margin: 0 20px;
+      }
+
+      #fiveEleven{
+         flex: 1; 
+      }
+
+         .projImage{
+            max-width: 100%;
+            display: block; /* Not sure why this was needed, but it removed an unwanted gap */
+         }
+
+         .projDescription{
+            background-image: linear-gradient(to right, rgb(248,248,248), silver);
+            text-align: justify;
+            font-size: 70%;
+            height: 160px;
+         }
+
+         .logoBin{
+            max-width: 100%;
+            background-image: linear-gradient(to right, rgb(248,248,248), silver);            
+            padding: 5px 10px;
+         }
+
+            .langDisc{
+               display: inline-block;
+               width: 30px;
+               margin: 3px;
+            }
+
+         .projButton{
+            display: block;
+            background-color: rgb(64, 125, 97);
+            border: 1px solid black;
+            border-radius: 6px;
+            box-shadow: 3px 3px 5px gray;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: x-small;
+            padding: 3px;
+            margin: 0 auto 8px;
+            width: max-content;
+         }
+
+/* Footer div */
+   #footer{
+      background-color: rgb(248, 248, 248);
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 5px;
+      text-align: center;
+
+   }
+
+      .socialLogo{
+         max-width: 15px;
+         vertical-align: middle;
+      }
+
+      .socialLink{
+         font-style: italic;
+      }
